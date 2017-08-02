@@ -7,7 +7,6 @@
     "start": "webpack-dev-server"
   },
   "dependencies": {
-    "coffee-script": "^1.12.7",
     "html-webpack-plugin": "^2.30.1",
     "path": "^0.12.7",
     "react": "^15.6.1",
