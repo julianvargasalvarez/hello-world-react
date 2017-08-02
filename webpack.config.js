@@ -7,15 +7,15 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 })
 
 module.exports = {
-  entry: './client/index.js',
+  entry: './client/index.cjsx',
   output: {
     path: path.resolve('dist'),
     filename: 'index_bundle.js'
   },
   module: {
     loaders: [
-      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
+      { test: /\.cjsx$/, loader: 'coffee-jsx-loader', exclude: /node_modules/ },
+      { test: /\.coffee$/, loader: 'coffee-jsx-loader', exclude: /node_modules/ },
     ]
   },
   plugins: [HtmlWebpackPluginConfig]
