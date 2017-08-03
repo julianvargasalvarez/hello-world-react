@@ -1,8 +1,10 @@
 React = require 'react'
+c = React.createElement
+saludo = require './jose.ls'
 
 class App extends React.Component
   render: ->
-    React.createElement 'div', null,
-      React.createElement('h1', null, "Hello World")
+    c 'div', null,
+      c 'h1', null, saludo()
 
 module.exports = App
