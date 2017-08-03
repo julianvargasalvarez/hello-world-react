@@ -7,7 +7,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 })
 
 module.exports = {
-  entry: './client/index.js',
+  entry: './client/index.ls',
   output: {
     path: path.resolve('dist'),
     filename: 'index_bundle.js'
@@ -15,7 +15,8 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.js$/, loader: 'livescript-loader', exclude: /node_modules/ },
-      { test: /\.jsx$/, loader: 'livescript-loader', exclude: /node_modules/ }
+      { test: /\.jsx$/, loader: 'livescript-loader', exclude: /node_modules/ },
+      { test: /\.ls$/, loader: 'livescript-loader', exclude: /node_modules/ }
     ]
   },
   plugins: [HtmlWebpackPluginConfig]
