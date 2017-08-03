@@ -10,6 +10,8 @@
     "html-webpack-plugin": "^2.30.1",
     "livescript": "^1.5.0",
     "livescript-loader": "^0.1.6",
+    "lsx-pug": "^0.1.57",
+    "lsxc": "^0.0.250",
     "path": "^0.12.7",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
